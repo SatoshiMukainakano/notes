@@ -13,5 +13,10 @@
 * レビュー
   * [依頼するとき](./review/10_request.md)
   * [引き受けるとき対応について](./review/30_implement.md)
+
+## その他・資料など
+
+* デバイスなど
+  * [出力](./device/10_output.md)
 * [備考](./90_other.md)
 

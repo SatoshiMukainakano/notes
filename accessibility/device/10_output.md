@@ -24,6 +24,8 @@
   * [JAWS for Windows（※有料）](http://www.extra.co.jp/jaws/index.html)
   * [PC-Talker（※有料）](http://www.aok-net.com/screenreader/)
   * [FocusTalk（※有料）](https://www.skyfish.co.jp/service/focustalk.html)
+  * Windows ナレーター
+  * macOS VoiceOver
 * スマートフォンの読み上げ機能
   * [AndroidOS TalkBack（※紹介記事）](https://website-usability.info/2014/04/entry_140405.html)
   * [iOS VoiceOver](https://www.apple.com/jp/accessibility/iphone/vision/)

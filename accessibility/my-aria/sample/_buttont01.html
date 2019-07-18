@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<title>標本（button部品） in アクセシビリティ・標本HTML集</title>
+
+<!-- header meta values -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- / header meta values -->
+
+<link rel="stylesheet" href="./css/pc/reset.css" media="screen and (min-width:813px)">
+<link rel="stylesheet" href="./css/pc/common.css" media="screen and (min-width:813px)">
+<link rel="stylesheet" href="./css/sp/reset.css" media="screen and (max-width:812px)">
+<link rel="stylesheet" href="./css/sp/common.css" media="screen and (max-width:812px)">
+<link rel="stylesheet" href="./css/_list01.css" media="screen">
+
+</head>
+
+<body class="MYARIA2019_body01">
+<div class="MYARIA2019_page01">
+
+
+<main class="MYARIA2019_contentMain01">
+
+  <header class="MYARIA2019_header01">
+    <h1>標本（button部品）</h1>
+  <!-- /header01 --></header>
+
+
+  <article>
+
+    <section>
+      <h2>フォーム送信がなく、ほかのページへ遷移する</h2>
+
+      <p><a href="#">aタグでボタン</a></p>
+
+      <p><span role="button">やむなくaタグが使えない箇所でのケース</span></p>
+
+    </section>
+
+
+    <section>
+      <h2>ほかのページへの遷移はない</h2>
+
+      <p><button>buttonタグでボタン</button></p>
+
+      <p><span role="button">やむなくbuttonタグが使えない箇所でのケース</span>（radioボタン的な）</p>
+
+      <p>※buttonがアクティブになったり、そうでなくなったりする場合は、 `aria-activedescendant="アクティブなボタンのid"` のaria属性を、一覧なタグに付与する</p>
+
+    </section>
+
+
+    <section>
+      <h2>フォーム送信があり、ほかのページへ遷移する</h2>
+
+      <p>※一般的に、form・input などでフォームをこしらえる</p>
+
+    </section>
+
+
+
+  </article>
+
+
+  <article>
+    <h2>解説</h2>
+
+(empty)
+
+  </article>
+<!-- /contentMain01 --></main>
+
+
+
+<footer class="MYARIA2019_footer01">
+  <small>© 2019 Satoshi Mukainakano</small>
+<!-- /footer01 --></footer>
+
+<!-- /page01 --></div>
+</body>
+</html>

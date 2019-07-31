@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<title>標本（basic-flows 1） in アクセシビリティ・標本HTML集</title>
+
+<!-- header meta values -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- / header meta values -->
+
+<link rel="stylesheet" href="./css/pc/reset.css" media="screen and (min-width:813px)">
+<link rel="stylesheet" href="./css/pc/common.css" media="screen and (min-width:813px)">
+<link rel="stylesheet" href="./css/sp/reset.css" media="screen and (max-width:812px)">
+<link rel="stylesheet" href="./css/sp/common.css" media="screen and (max-width:812px)">
+<link rel="stylesheet" href="./css/_basic_flow01.css" media="screen">
+
+</head>
+
+<body class="MYARIA2019_body01">
+<div class="MYARIA2019_page01">
+
+
+<main role="main" class="MYARIA2019_contentMain01">
+
+  <header class="MYARIA2019_header01">
+    <h1>標本（basic-flows 1）</h1>
+  <!-- /header01 --></header>
+
+
+  <article>
+
+    <h2>方針</h2>
+
+    <section>
+
+      <h3>header / footer / main</h3>
+
+      <p>「body以外のセクションに属さない header 、body以外のセクションに属さない footer 、階層的に正しい main でそのページの必要分を構成する」を前提としたタグ充てをする</p>
+
+      <p>このとき、webサイトの広範で共通の内容を備えている header 部分は role="banner"、同じく footer 部分は role="contentinfo" を帯びる。</p>
+
+    </section>
+
+    <section>
+
+      <h3>セクショニング</h3>
+
+      <ul class="MYARIA2019_basic_flow01_freeList01">
+        <li class="MYARIA2019_basic_flow01_freeList01_item">article</li>
+        <li class="MYARIA2019_basic_flow01_freeList01_item">aside</li>
+        <li class="MYARIA2019_basic_flow01_freeList01_item">nav</li>
+        <li class="MYARIA2019_basic_flow01_freeList01_item">section</li>
+      </ul>
+
+      <p>article 1つで、その中だけで主題と主旨が完結していることがわかる。ようにする。</p>
+
+      <p>本文からそれる、無関係、関係あっても脚注程度、というコンテンツは aside でくくって弾かせられる。ようにする。</p>
+
+      <p>別のコンテンツに移動したいときに、即座に nav へ誘導する。ようにする。</p>
+
+      <p>article / aside / nav より粒度小さくて、見出しやラベル持てるぐらいには粒度あるものを section で整理する。</p>
+
+      <p>これらはいずれも、中に 見出しやラベル を内包する。している。ようにする。</p>
+
+    </section>
+
+    <section>
+
+      <h3>見出し</h3>
+
+      <ul class="MYARIA2019_basic_flow01_freeList01">
+        <li class="MYARIA2019_basic_flow01_freeList01_item">h1</li>
+        <li class="MYARIA2019_basic_flow01_freeList01_item">h2</li>
+        <li class="MYARIA2019_basic_flow01_freeList01_item">h3</li>
+        <li class="MYARIA2019_basic_flow01_freeList01_item">h4</li>
+        <li class="MYARIA2019_basic_flow01_freeList01_item">h5</li>
+        <li class="MYARIA2019_basic_flow01_freeList01_item">h6</li>
+      </ul>
+
+      <p>「body以外のセクションに属さない header 、body以外のセクションに属さない footer 、階層的に正しい main でそのページの必要分を構成する」を前提としたタグ充てをする</p>
+
+      <p>このとき、header 部分は role="banner"、footer 部分は role="contentinfo" を帯びる。</p>
+
+    </section>
+
+  </article>
+
+
+  <aside>
+
+    <h2>当該タグが使えない場合の代替策</h2>
+
+    <section>
+
+      <h3>例・html5以降が使えない環境の場合</h3>
+
+      <p><a href="_basic_flow01_alt.html">代替案とする書き方</a>で示す。</p>
+
+    </section>
+
+  </aside>
+
+
+  <article>
+
+    <h2>解説</h2>
+
+    <section>
+
+      <h3>前段</h3>
+
+      <p>このHTMLそのものを見れば、当標本で説明したかったことをいくらか確認できる。</p>
+
+    </section>
+
+    <section>
+
+      <h3>header / footer / main</h3>
+
+      <p>「body以外のセクションに属している header」は、属するセクションにおける header であって role="banner" も帯びない。</p>
+
+      <p>「body以外のセクションに属している footer」は、属するセクションにおける footer であって role="contentinfo" も帯びない。</p>
+
+      <p>「階層的に正しくない main」は、そもそも不適切。25日</p>
+
+      <h4>補助</h4>
+
+      <p>厳密には、「headerタグは webサイトのヘッダ部品だから充てられている」、という解釈には誤解が含まれる。いわゆるヘッダ部品じゃない箇所でも利用に適した用法があり、headerタグ の先祖要素・文書全体を見て解釈を掴むべきである。</p>
+
+      <p>厳密には、footerタグも 前述の header タグと同様。</p>
+
+    </section>
+
+    <section>
+
+      <h3>セクショニング</h3>
+
+      <p>article 1つの中で、コンテンツの主題・主旨が1セットになっていれさえすれば、同一文書の中に article が複数あってもよい。</p>
+
+      <p>このとき、webページにおけるいわゆるヘッダ・フッタ（：どのページでも同一的に表示・機能させたいもの）は、どのarticleにも含ませないで考える。</p>
+
+    </section>
+
+  </article>
+<!-- /contentMain01 --></main>
+
+
+
+<footer role="contentinfo" class="MYARIA2019_footer01">
+  <small>© 2019 Satoshi Mukainakano</small>
+<!-- /footer01 --></footer>
+
+<!-- /page01 --></div>
+</body>
+</html>

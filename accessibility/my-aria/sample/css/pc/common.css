@@ -2,10 +2,10 @@
 
 /*---- base ----*/
 .MYARIA2019_body01{
-  background: #333;
-  color: #fff;
-  font-size: 1.6rem;
-  line-height: 1.5;
+  background:#333;
+  color:#fff;
+  font-size:1.6rem;
+  line-height:1.5;
 }
 
 .MYARIA2019_page01{
@@ -20,6 +20,8 @@
 
 /*---- main-zoning ----*/
 .MYARIA2019_header01{
+  padding:20px;
+  background:#666;
 }
 
 .MYARIA2019_footer01{
@@ -34,6 +36,13 @@
 }
 
 .MYARIA2019_contentMain01{
+}
+
+
+/*---- basic-sections ----*/
+.MYARIA2019_contentMain01 > aside,
+.MYARIA2019_contentMain01 > article{
+  padding:20px 20px 0;
 }
 
 

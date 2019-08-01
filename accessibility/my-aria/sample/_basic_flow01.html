@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 
-<title>標本（basic-flows 1） in アクセシビリティ・標本HTML集</title>
+<title>標本（basic flows 1） in アクセシビリティ・標本HTML集</title>
 
 <!-- header meta values -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -24,7 +24,7 @@
 <main role="main" class="MYARIA2019_contentMain01">
 
   <header class="MYARIA2019_header01">
-    <h1>標本（basic-flows 1）</h1>
+    <h1>標本（basic flows 1）</h1>
   <!-- /header01 --></header>
 
 
@@ -36,9 +36,9 @@
 
       <h3>header / footer / main</h3>
 
-      <p>「body以外のセクションに属さない header 、body以外のセクションに属さない footer 、階層的に正しい main でそのページの必要分を構成する」を前提としたタグ充てをする</p>
+      <p>「body以外のセクションに属さない header 、body以外のセクションに属さない footer 、階層的に正しい main でそのページの必要分を構成する」を前提としたタグ充てをする。</p>
 
-      <p>このとき、webサイトの広範で共通の内容を備えている header 部分は role="banner"、同じく footer 部分は role="contentinfo" を帯びる。</p>
+      <p>このとき、webサイトの広範で共通の内容を備える header 部分は role="banner"、同じく footer 部分は role="contentinfo" を帯びる。</p>
 
     </section>
 
@@ -53,15 +53,15 @@
         <li class="MYARIA2019_basic_flow01_freeList01_item">section</li>
       </ul>
 
-      <p>article 1つで、その中だけで主題と主旨が完結していることがわかる。ようにする。</p>
+      <p>article 1つで、その中だけで主題と主旨が完結していることがわかるようにする。</p>
 
-      <p>本文からそれる、無関係、関係あっても脚注程度、というコンテンツは aside でくくって弾かせられる。ようにする。</p>
+      <p>本文からそれる、無関係、関係あっても脚注程度、というコンテンツは aside でくくって弾かせられるようにする。</p>
 
-      <p>別のコンテンツに移動したいときに、即座に nav へ誘導する。ようにする。</p>
+      <p>別のコンテンツに移動したいときに、即座に nav へ誘導するようにする。</p>
 
       <p>article / aside / nav より粒度小さくて、見出しやラベル持てるぐらいには粒度あるものを section で整理する。</p>
 
-      <p>これらはいずれも、中に 見出しやラベル を内包する。している。ようにする。</p>
+      <p>これらはいずれも、中に 見出しやラベル を内包する。内包している。内包するようにする。</p>
 
     </section>
 
@@ -78,9 +78,7 @@
         <li class="MYARIA2019_basic_flow01_freeList01_item">h6</li>
       </ul>
 
-      <p>「body以外のセクションに属さない header 、body以外のセクションに属さない footer 、階層的に正しい main でそのページの必要分を構成する」を前提としたタグ充てをする</p>
-
-      <p>このとき、header 部分は role="banner"、footer 部分は role="contentinfo" を帯びる。</p>
+      <p>前項の「セクショニング」で区分けされた、それぞれのセクションに見出しを割り当てる。たとえ表示させるものがなくても、コンテンツの「意味」を明記したうえで hidden させる</p>
 
     </section>
 
@@ -119,6 +117,8 @@
       <h3>header / footer / main</h3>
 
       <p>「body以外のセクションに属している header」は、属するセクションにおける header であって role="banner" も帯びない。</p>
+
+      <p>「body以外のセクションに属していない header」であっても、webサイトの広範で共通の内容を備える header 部分でない場合は role="banner" も帯びない。</p>
 
       <p>「body以外のセクションに属している footer」は、属するセクションにおける footer であって role="contentinfo" も帯びない。</p>
 

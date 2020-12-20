@@ -1,4 +1,4 @@
-# 「シンプルなマークアップ」 のための 「コードパターン」
+# 「シンプルなHTMLマークアップ」 のための 「コードパターン」
 
 ## おことわり
 
@@ -8,6 +8,16 @@
 
 ## 参考文献
 
+* [HTML Living Standard](https://html.spec.whatwg.org/multipage/)
+  * [日本語訳](https://momdo.github.io/html/)
+  * ※いずれも、当記事編集時点での内容をもとに参考
+* [MDN - HTML](https://developer.mozilla.org/ja/docs/Web/HTML)
+* [WAIC - WCAG2.1 日本語訳](https://waic.jp/docs/WCAG21/)
+  * [WAIC - WCAG2.1 達成方法集](https://waic.jp/docs/WCAG21/Techniques/)
+* [a11y.jp](https://weba11y.jp/)
+  * [Webアクセシビリティ確保 基本の「キ」](https://weba11y.jp/know-how/10basics/10basics_index/)
+* [MDN - CSS](https://developer.mozilla.org/ja/docs/Web/CSS)
+* [Can I Use - HTML](https://caniuse.com/?cats=HTML5&statuses=all)
 * （編集中）
 
 ## 目次・章次

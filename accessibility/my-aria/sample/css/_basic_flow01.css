@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*---- local-stylesheet : _basic_flow01 ----*/
+
+.MYARIA2019_basic_flow01_freeList01{
+}
+
+.MYARIA2019_basic_flow01_freeList01_item{
+  display:inline;
+}
+
+.MYARIA2019_basic_flow01_freeList01_item::after{
+  content:"/";
+}
+
+.MYARIA2019_basic_flow01_freeList01_item:last-child::after{
+  content:"";
+}
+
+
+
+
+/*---- ＊ EOF ＊ ----*/

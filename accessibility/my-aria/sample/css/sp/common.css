@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*---- base ----*/
+.MYARIA2019_body01{
+  background: #333;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.MYARIA2019_page01{
+  position:relative;
+  box-sizing:border-box;
+  min-height:100vh;
+  padding-bottom:45px;
+  background-color:#000;
+  color:#fff;
+}
+
+
+/*---- main-zoning ----*/
+.MYARIA2019_header01{
+}
+
+.MYARIA2019_footer01{
+  position:absolute;
+  right:0;
+  bottom:0;
+  left:0;
+  box-sizing:border-box;
+  padding:15px 5px;
+  text-align:center;
+  font-size:1.2rem;
+}
+
+.MYARIA2019_contentMain01{
+}
+
+
+
+
+/*---- ＊ EOF ＊ ----*/

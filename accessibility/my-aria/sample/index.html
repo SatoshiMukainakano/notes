@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<title>Indexページ in アクセシビリティ・標本HTML集</title>
+
+<!-- header meta values -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- / header meta values -->
+
+<link rel="stylesheet" href="./css/pc/reset.css" media="screen and (min-width:813px)">
+<link rel="stylesheet" href="./css/pc/common.css" media="screen and (min-width:813px)">
+<link rel="stylesheet" href="./css/sp/reset.css" media="screen and (max-width:812px)">
+<link rel="stylesheet" href="./css/sp/common.css" media="screen and (max-width:812px)">
+<link rel="stylesheet" href="./css/index.css" media="screen">
+
+</head>
+
+<body class="MYARIA2019_body01">
+<div class="MYARIA2019_page01">
+
+
+<main role="main" class="MYARIA2019_contentMain01">
+
+  <header class="MYARIA2019_header01">
+    <h1>Indexページ in アクセシビリティ・標本HTML集</h1>
+  <!-- /header01 --></header>
+
+
+  <article>
+
+    <section>
+      <h2>1本にまとめた標本</h2>
+
+      <ul>
+        <li><a href="./_basic_flow01.html">basic flows 1</a>(<a title="basic flows 1 では不都合がある場合" href="_basic_flow01_alt.html">代案</a>)</li>
+        <li><a href="./_list01.html">list系ページ1</a></li>
+      </ul>
+    </section>
+
+
+    <section>
+      <h2>主な部品</h2>
+
+      <ul>
+        <li><a href="#">ナビゲーション1</a></li>
+        <li><a href="./_ad01.html">広告バナー区画1</a></li>
+      </ul>
+    </section>
+
+
+  </article>
+
+  <article>
+    <h2>解説</h2>
+<pre>
+[note]
+https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/Roles
+https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/ARIA_Techniques
+https://momdo.github.io/html-aria/
+  and
+https://momdo.github.io/html/interactive-elements.html#the-dialog-element
+
+
+[[ランドマーク]]
+ロゴを中心とした、本文と直接は無関係の、全ページ上部にあるサイト全体共通のサイトヘッダーのコンテンツ ... role="banner"
+著作権表記などを中心とした、本文とは直接は無関係の、全ページ下部にあるサイト全体共通のサイトフッタのコンテンツ ... role="contentinfo"
+mainタグ / role="main"
+
+
+[[部品]]
+
+dialogタグ / role="dialog"
+
+
+[[その他]]
+広告枠 : asideタグ＋aria-label="広告"、もしくは role="complementary" aria-label="広告" として、中身を aria-hidden="true"
+　（※理想は、「asideタグ＋aria-label="広告"、もしくは role="complementary" aria-label="広告" として、中身に role="presentation"」としたいところ）」
+
+
+
+
+
+
+
+[note]
+http://www.webcreativepark.net/html/wai-aria/
+
+JSなどでDOMを書き換えるとき、、、
+* aria-busy : 更新前＝false、更新中＝true、更新後＝false
+* aria-atomic : 更新後に更新した範囲だけを含んでたらfalse、ほかのも含んでいて一部だけの更新だったならtrue
+* aria-live : 更新されても伝達しない＝off、適切そうなタイミングで伝える＝polite、即座に伝える＝assertive
+
+ドラッグ＆ドロップするもの・ドロップ先
+* aria-grabbed : ドラッグ＆ドロップできない＝undefined(デフォルト)、ドラッグ＆ドロップできるけどまだされてない＝false、ドラッグ＆ドロップできるし今されてる＝true
+* aria-dropeffect : ドロップされたものを複製する＝copy、ドロップされたものをされた先に移動する＝move、ほかいろいろ
+  * http://www.webcreativepark.net/html/wai-aria/aria-dropeffect/
+
+ラベルと実体
+* aria-label="ラベルとなるワード"
+* 実体に充てるラベルの要素を指定する aria-labelledby
+
+タブ部品：role="tablist" ＋ role="tab" ＋ role="tabpanel"
+* パネル[role="tabpanel"] のトリガーになるタブを `aria-labelledby="トリガーのタブ"` で指定
+* トリガー[role="tab"] によるトリガーでアクティブにするパネルを `aria-controls="対応するパネル"` で指定
+* アクティブになっているパネルのトリガー : aria-selected="true"
+* そのトリガーでパネルが開いている : aria-expanded="true"
+* トリガーを複数アクティブにできる : aria-multiselectable="true"
+
+フォーム部品：
+* 入力必須のinput : aria-required
+  * このariaで示せてるので、入力必須であることを示す物理的記号には aria-hdden="true" で覆える
+* aria-multiline : 複数行テキスト入力できる＝true、できない＝false
+* aria-invalid : submitされたformにおいて、不正な値を入力されたフォームに設定する
+※ formタグにnovalidate : 妥当性のチェック（入力内容の検証）を無効にする
+* aria-errormessage : エラー文言を入れる要素を指定する
+* aria-checked : true / false
+* aria-disabled : true / false
+
+  ※ チェックボックス：role="checkbox"
+
+パンくず・現在地：
+* aria-current : 現在地である＝true
+
+？：
+* aria-orientation : 水平＝horizontal、垂直＝vertical
+* aria-level : 階層の高さを数値で
+* aria-hidden : ユーザエージェントに認識させたくない＝true
+* aria-haspopup : ポップアップメニューがある＝true
+* aria-flowto : 次の読み上げ対象を指定
+* aria-describedby : 解説している要素を指定
+
+
+</pre>
+  </article>
+<!-- /contentMain01 --></main>
+
+
+
+<footer role="contentinfo" class="MYARIA2019_footer01">
+  <small>© 2019 Satoshi Mukainakano</small>
+<!-- /footer01 --></footer>
+
+<!-- /page01 --></div>
+</body>
+</html>

@@ -34,4 +34,5 @@
 
 * [ハイパーリンク](./link/10_basic.md)
 * [意味レイアウト](./layouting/10_basic.md)
+* [画像](./images/10_basic.md)
 * （編集中）

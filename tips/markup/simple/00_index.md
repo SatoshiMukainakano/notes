@@ -22,6 +22,11 @@
   * [Webアクセシビリティ 逆引きガイドライン](https://weba11y.jp/know-how/guidelines/guidelines_index/)
 * [MDN - CSS](https://developer.mozilla.org/ja/docs/Web/CSS)
 * [Can I Use - HTML](https://caniuse.com/?cats=HTML5&statuses=all)
+* [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
+  * ダイアログ、ディスクロージャをはじめとするデザインパターンやウィジェットに対する実装例について書かれた文書
+  * ※ただし、あくまで「止むを得ない場合での実装例」。aria は「悪いaria」よりも「ないaria」のほうがよいとされる
+    * [具体的な実装例](https://www.w3.org/TR/wai-aria-practices-1.1/examples/)
+  * [日本語訳](https://waic.jp/docs/2019/NOTE-wai-aria-practices-1.1-20190207/)
 * （随時、編集中）
 
 ## 目次・章次

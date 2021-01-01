@@ -74,3 +74,9 @@ HTML の作法としては `a` タグが利用されるべき箇所で、どう�
   * `role="link"` もしくは `role="button"` を充て、
   * さらに、【enterキーを押したときの挙動】 を明確にアサインし、
   * その要素が「文書的・意味的」にも「キーボード操作的」にもサポートできている状態を確保する
+
+### 参考
+
+`【isTemporary・やむなし＝】` [WAI-ARIA Authoring Practices 1.1 : ARIA Design Pattern Examples - Link Examples](https://www.w3.org/TR/wai-aria-practices-1.1/examples/link/link.html)
+
+※もちろん、やむなき利用にとどめるべきで、普段からこの実装をすることは勧められない

@@ -27,12 +27,23 @@
 
 ## 具体的な 阻害パターン
 
+### 資料・WCAG関連文書から
+
+おおむね、以下で収録・紹介されている実装例は 「使えないwebサイト作り」 に役立つものが少なくなく、おすすめ
+
+* [w3c - Techniques for WCAG 2.2 - Common Failures](https://w3c.github.io/wcag/techniques/#failures)
+* [waic - WCAG 2.1 達成方法集（日本語訳） - よくある失敗例](https://waic.jp/docs/WCAG21/Techniques/#failures)
+
 ### HTMLコーディング
 
 * 情報を提供できるはずの `img` 要素で `alt` 属性を何も提供しない ()
 * 要素は `div` `span` ばかりでマークアップする
 * 遷移するリンクで `a` 要素を使わない
 * 遷移するだけのリンクに `button`要素を使う
+
+### CSSコーディング
+
+* HTMLから読み取れる情報に反する情報をCSSで提供する
 
 ### デザイン・ワーディング
 
